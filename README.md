@@ -30,9 +30,13 @@ A figure layer has the following methods...
 This method creates a new figure layer. `document` should be a `window.document` (natively available in the browser or created on the server using something like [JSDOM](https://github.com/tmpvar/jsdom)). If a `selection` is provided, the method appends a `figure` element to the `selection`. Otherwise the figure is appended to a generic `div` element. To create a new figure layer,
 
 ``` javascript
-var dashboard = document.querySelector( '.dashboard' );
+// Append to the `document`:
+figure.create( document );
 
-figure.create( document, dashboard );
+// Append to a selection:
+var selection = document.querySelector( '.selector' );
+
+figure.create( document, selection );
 ``` 
 
 #### figure.root()
