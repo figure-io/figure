@@ -4,9 +4,6 @@
 var // Expectation library:
 	chai = require( 'chai' ),
 
-	// Test utilities:
-	jsdom = require( 'jsdom' ).jsdom,
-
 	// Module to be tested:
 	Figure = require( './../lib' );
 
@@ -24,11 +21,7 @@ describe( 'xfig-figure', function tests() {
 
 	// SETUP //
 
-	var figure,
-		document;
-
-	// Create a window document:
-	document = jsdom( '<html><head></head><body></body></html>' );
+	var figure;
 
 	// Any tasks to run before each test:
 	beforeEach( function() {
@@ -48,15 +41,8 @@ describe( 'xfig-figure', function tests() {
 			expect( figure.create ).to.be.a( 'function' );
 		});
 
-		it( 'should require a `document` object', function() {
-			expect( foo ).to.throw( Error );
-			function foo() {
-				figure.create();
-			}
-		});
-
 		it( 'should create a root layer element', function() {
-			figure.create( document );
+			figure.create();
 			expect( figure.root() ).to.not.be.a( 'null' );
 		});
 
@@ -65,7 +51,7 @@ describe( 'xfig-figure', function tests() {
 
 			selection.className += 'test';
 
-			figure.create( document, selection );
+			figure.create( selection );
 
 			expect( selection.children ).to.not.be.an( 'empty' );
 		});
@@ -79,7 +65,7 @@ describe( 'xfig-figure', function tests() {
 		});
 
 		it( 'should return the root layer element', function test() {
-			figure.create( document );
+			figure.create();
 			assert.ok( figure.root() );
 		});
 
@@ -92,7 +78,7 @@ describe( 'xfig-figure', function tests() {
 		});
 
 		it( 'should return the parent DOMElement', function test() {
-			figure.create( document );
+			figure.create();
 			assert.ok( figure.parent() );
 		});
 
@@ -105,7 +91,7 @@ describe( 'xfig-figure', function tests() {
 		});
 
 		it( 'should return the layer children', function test() {
-			figure.create( document );
+			figure.create();
 			expect( figure.children() ).to.be.an( 'object' );
 		});
 
@@ -118,7 +104,7 @@ describe( 'xfig-figure', function tests() {
 		});
 
 		it( 'should return the layer configuration', function test() {
-			figure.create( document );
+			figure.create();
 			expect( figure.config() ).to.be.an( 'object' );
 		});
 

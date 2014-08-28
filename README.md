@@ -27,18 +27,18 @@ var figure = new Figure();
 A layer generator has the following methods...
 
 
-#### figure.create( document[, selection] )
+#### figure.create( [selection] )
 
-This method creates a new figure layer. `document` should be a `window.document` (natively available in the browser or created on the server using something like [JSDOM](https://github.com/tmpvar/jsdom)). If a `selection` is provided, the method appends a `figure` element to the `selection`. Otherwise the figure is appended to a generic `div` element. To create a new figure layer,
+This method creates a new figure layer. If a `selection` is provided, the method appends a `figure` element to the `selection`. Otherwise the figure is appended to a generic `div` element. To create a new figure layer,
 
 ``` javascript
 // Append to the `document`:
-figure.create( document );
+figure.create();
 
 // Append to a selection:
 var selection = document.querySelector( '.selector' );
 
-figure.create( document, selection );
+figure.create( selection );
 ``` 
 
 #### figure.root()
