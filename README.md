@@ -4,6 +4,8 @@ Figure Layer
 
 > Factory to create figure layers.
 
+Defines a figure `layer` and its associated methods. This layer serves as the foundation for additional graphical layers.
+
 
 
 ## Installation
