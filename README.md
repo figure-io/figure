@@ -131,17 +131,17 @@ Copyright &copy; 2014. Athan Reines.
 [npm-image]: http://img.shields.io/npm/v/xfig-figure.svg
 [npm-url]: https://npmjs.org/package/xfig-figure
 
-[travis-image]: http://img.shields.io/travis/figure-io/xfig-figure/master.svg
-[travis-url]: https://travis-ci.org/figure-io/xfig-figure
+[travis-image]: http://img.shields.io/travis/figure-io/figure/master.svg
+[travis-url]: https://travis-ci.org/figure-io/figure
 
-[coveralls-image]: https://img.shields.io/coveralls/figure-io/xfig-figure/master.svg
-[coveralls-url]: https://coveralls.io/r/figure-io/xfig-figure?branch=master
+[coveralls-image]: https://img.shields.io/coveralls/figure-io/figure/master.svg
+[coveralls-url]: https://coveralls.io/r/figure-io/figure?branch=master
 
-[dependencies-image]: http://img.shields.io/david/figure-io/xfig-figure.svg
-[dependencies-url]: https://david-dm.org/figure-io/xfig-figure
+[dependencies-image]: http://img.shields.io/david/figure-io/figure.svg
+[dependencies-url]: https://david-dm.org/figure-io/figure
 
-[dev-dependencies-image]: http://img.shields.io/david/dev/figure-io/xfig-figure.svg
-[dev-dependencies-url]: https://david-dm.org/dev/figure-io/xfig-figure
+[dev-dependencies-image]: http://img.shields.io/david/dev/figure-io/figure.svg
+[dev-dependencies-url]: https://david-dm.org/dev/figure-io/figure
 
-[github-issues-image]: http://img.shields.io/github/issues/figure-io/xfig-figure.svg
-[github-issues-url]: https://github.com/figure-io/xfig-figure/issues
+[github-issues-image]: http://img.shields.io/github/issues/figure-io/figure.svg
+[github-issues-url]: https://github.com/figure-io/figure/issues
