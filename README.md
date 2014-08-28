@@ -4,7 +4,7 @@ Figure Layer
 
 > Factory to create figure layers.
 
-Defines a figure `layer` and its associated methods. This layer serves as the foundation for additional graphical layers.
+Defines a figure `layer` generator and its associated methods. A figure `layer` serves as the foundation for additional graphical layers.
 
 
 
@@ -16,7 +16,7 @@ $ npm install xfig-figure
 
 ## Usage
 
-To create a new figure layer,
+To create a new figure layer generator,
 
 ``` javascript
 var Figure = require( 'xfig-figure' );
@@ -24,7 +24,7 @@ var Figure = require( 'xfig-figure' );
 var figure = new Figure();
 ```
 
-A figure layer has the following methods...
+A layer generator has the following methods...
 
 
 #### figure.create( document[, selection] )
