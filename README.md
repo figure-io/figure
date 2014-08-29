@@ -67,6 +67,8 @@ This method returns the figure layer children. The children are returned in an `
 figure.children();
 ```
 
+Note: initially, this is an empty object. As layers are appended to the figure layer, the children object is updated.
+
 
 #### figure.config()
 
@@ -75,6 +77,8 @@ This method returns the figure configuration as a JSON blob. To get the layer co
 ``` javascript
 figure.config();
 ```
+
+Note: initially this is an empty object. As layers are appended to the figure layer, the configuration object is updated to include all child configurations.
 
 
 ## Examples
