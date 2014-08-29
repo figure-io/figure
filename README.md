@@ -77,15 +77,45 @@ figure.config();
 ```
 
 
-
-
 ## Examples
+
+``` javascript
+var Figure = require( 'xfig-figure' );
+
+// Create a parent container:
+var selection = document.createElement( 'div' );
+
+selection.className += 'widget';
+
+// Create a new figure instance:
+var figure = new Figure();
+
+// Append a figure layer to the selection:
+figure.create( selection );
+
+// Return the layer root:
+console.log( figure.root() );
+
+// Return the layer children:
+console.log( figure.children() );
+
+// Return the layer parent:
+console.log( figure.parent() );
+
+// Return the layer configuration:
+console.log( figure.config() );
+```
 
 To run the example code from the top-level application directory,
 
 ``` bash
 $ node ./examples/index.js
 ```
+
+
+## Notes
+
+__WARNING:__ This package creates a `document` global variable.
 
 
 ## Tests
