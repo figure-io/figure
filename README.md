@@ -78,7 +78,7 @@ This method returns the figure configuration as a JSON blob. To get the layer co
 figure.config();
 ```
 
-Note: initially this is an empty object. As layers are appended to the figure layer, the configuration object is updated to include all child configurations.
+Note: initially, this is an empty object. As layers are appended to the figure layer, the configuration object is updated to include all child configurations.
 
 
 ## Examples
