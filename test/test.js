@@ -43,7 +43,7 @@ describe( 'xfig-figure', function tests() {
 
 		it( 'should create a root layer element', function() {
 			figure.create();
-			expect( figure.root() ).to.not.be.a( 'null' );
+			assert.notEqual( figure.root(), undefined );
 		});
 
 		it( 'should append a root layer element to a specified selection', function test() {
